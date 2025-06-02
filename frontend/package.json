@@ -1,0 +1,41 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
+    "@mui/icons-material": "^6.4.5",
+    "@mui/material": "^6.4.5",
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
+    "axios": "^1.8.3",
+    "gsap": "^3.12.7",
+    "next": "^14.2.24",
+    "react": "^18.3.1",
+    "react-best-gradient-color-picker": "^3.0.14",
+    "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.10",
+    "react-lottie-player": "^2.1.0",
+    "swiper": "^11.2.4",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "20.17.24",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "typescript": "5.8.2"
+  }
+}

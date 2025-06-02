@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+/py_orbbecsdk
+color_depth_images/
+# Python 캐시 파일 제외
+__pycache__/
+*.pyc
+*.cpython-312.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+logs/
+backend/controller/__pycache__/face_reset_controller.cpython-312.pyc
+backend/controller/__pycache__/profile_controller.cpython-312.pyc
+backend/controller/__pycache__/seat_controller.cpython-312.pyc
+backend/dao/__pycache__/login_dao.cpython-312.pyc
+backend/dao/__pycache__/profile_dao.cpython-312.pyc
+backend/model/__pycache__/login_model.cpython-312.pyc
+backend/service/__pycache__/face_reset_service.cpython-312.pyc
+backend/service/__pycache__/profile_service.cpython-312.pyc
+backend/service/__pycache__/seat_service.cpython-312.pyc
+backend/controller/__pycache__/face_reset_controller.cpython-312.pyc
+backend/controller/__pycache__/profile_controller.cpython-312.pyc
+backend/controller/__pycache__/seat_controller.cpython-312.pyc
+backend/dao/__pycache__/login_dao.cpython-312.pyc
+backend/dao/__pycache__/profile_dao.cpython-312.pyc
+backend/model/__pycache__/login_model.cpython-312.pyc
+backend/service/__pycache__/face_reset_service.cpython-312.pyc
+backend/service/__pycache__/profile_service.cpython-312.pyc
+backend/service/__pycache__/seat_service.cpython-312.pyc

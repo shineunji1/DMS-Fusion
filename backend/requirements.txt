@@ -1,0 +1,11 @@
+fastapi[all]
+uvicorn[standard]
+pymilvus
+pymysql
+imutils
+cmake
+dlib
+opencv-python
+pygame
+image
+scipy

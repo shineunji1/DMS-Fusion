@@ -1,0 +1,92 @@
+.container {
+    width: 100%; height: 100%;
+    color: #eee;
+    margin-top: 5%;
+}
+
+.setColorContainer {
+    margin-left: 38%;
+}
+.colorBox {
+    width: 208px;
+    height: 208px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+.colorAlert {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.setColor {
+    width: 310px;
+    background-color: #eee;
+}
+
+.setColor > div {
+    margin: auto;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+
+.inputBox {
+    width: 48%; height: 40%;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 5px;
+    backdrop-filter: blur(7.5px);
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.inputBox > div {
+    margin: auto;
+    position: relative;
+}
+.inputBox > div:first-child {
+    margin-top: 20px;
+}
+.inputBox input {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    padding-left: 21%;
+    width: 64%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputBox label {
+    color: #3E4451;
+    position: absolute;
+    top: 57%; left: 40px;
+}
+
+.inputBox .subtitle {
+    top: 46%;
+}
+
+.add {
+    cursor: pointer;
+    width: 10%;
+    margin: auto;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #21499e;
+    border-radius: 50px;
+    font-size: 24px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pwdInfo {
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-top: 0.2rem;
+}
+
+.add:hover {
+    background-color: #eee;
+    color: #3E4451;
+}

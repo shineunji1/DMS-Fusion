@@ -1,0 +1,229 @@
+.container {
+    display: flex;
+    margin-top: 100px; margin-left: 50px;
+    width: 100%;
+    animation: fade-in 1s ease
+}
+
+.container > div {
+  width: 40%;
+}
+
+.videoContainer > div {
+  width: 100%;
+}
+
+.videoBtns {
+  position: relative;
+  color: #eee;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center; 
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.videoBtns > div {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+
+.selectedVideo {
+  position: absolute;
+  top: 0; left: 0;
+  width: calc(100% / 2); height: 100%;
+  border-radius: 50px;
+  border-right: 0.3px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.videoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  height: 70%;
+  border-radius: 10px;
+  background-color: #d9d9d9; 
+}
+
+.camMoveBtn {
+  margin: auto; margin-top: 20px;
+  cursor: pointer;
+  color: #eee;
+  width: 40% !important;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #3ca5d6;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.camMoveBtn:hover {
+  background-color: #eee;
+  color: #608A9E;
+}
+
+.setArea {
+  margin-left: 43px;
+}
+
+.status {
+  display: flex;
+  width: 457px; height: 77px;
+  border-radius: 10px;
+  background: linear-gradient(94deg, 
+                            rgba(238, 238, 238, 0.15) 2.86%, 
+                            rgba(153, 153, 153, 0.15) 99.05%);
+  color: #eee;
+  justify-content: space-evenly;
+}
+
+.status > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  margin-left: 11px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 11.2px;
+}
+
+.statusIcon {
+  width: 13px; height: 13px;
+  margin-left: 13px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.alertContainer {
+  color: #eee;
+}
+
+.alertContainer .title {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  align-items: center;
+  text-align: center;
+}
+
+.alertContainer .btnBox {
+  position: relative;
+  margin: 20px 0; margin-left: 90px;
+  display: flex;
+  align-items: center;
+  width: 80%; height: 30px;
+  border-radius: 50px;
+  background-color: rgba(238, 238, 238, 0.10);
+  overflow: hidden;
+}
+
+.alertContainer .btnBox span {
+  flex: 1;
+  text-align: center; 
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  z-index: 1;
+}
+
+
+.selectedAlert {
+  position: absolute;
+  top: 0; left: 0;
+  width: calc(33.3333%); height: 100%;
+  border-radius: 50px;
+  border-right: 0.3px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+
+.alertBox {
+  margin-left: 20px;
+  width: 120%; height: 350px;
+  border-radius: 10px;
+  background-color: #556377;
+  overflow: hidden;
+}
+
+.alertBox div {
+  animation: fade-in 0.3s;
+}
+
+.detectSetBtns
+,.detectSetBtns > div {
+  display: flex;
+  margin-left: 20px;
+}
+
+.detectSetBtns {
+  width: 100%;
+  margin-top: 20px; 
+  justify-content: space-evenly;
+}
+
+.slideBtn {
+  position: relative;
+  width: 100px; height: 32px;
+  background-color: #878E94;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.slideCircle {
+  width: 25px; height: 25px;
+  background-color: #eee;
+  margin: 3px 9px;
+  border-radius: 50px;
+  transition: transform 0.5s ease;
+}
+
+.slideOn {
+  background-color: #5BA454;
+}
+
+.threeContainer {
+  margin-left: 50px;
+  width: 100%;
+  height: 80%;
+  animation: fade-in 0.5s ease;
+}
+
+.threeContainer canvas {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: white;
+  left: 66%; top: 55%;
+  border-radius: 10px;
+  animation: fade-in 0.3s ease;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fade-in {
+  0%{
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

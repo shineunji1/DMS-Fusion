@@ -1,0 +1,12 @@
+{
+ "scripts": {
+  "start": "pm2 start ecosystem.config.js --no-daemon",
+  "stop": "concurrently \"pm2 stop all\" \"pm2 delete all\""
+ },
+ "devDependencies": {
+  "concurrently": "^9.1.2"
+ },
+ "dependencies": {
+  "next": "^15.2.2"
+ }
+}

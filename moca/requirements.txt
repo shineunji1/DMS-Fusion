@@ -1,0 +1,6 @@
+numpy>=1.19.0
+opencv-python
+matplotlib
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch
+torchvision

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Steering Wheel
+* source:	https://sketchfab.com/3d-models/steering-wheel-bf1cf08501b04615aae65677850e7d8e
+* author:	ImGreenWolf (https://sketchfab.com/ImGreenWolf)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Steering Wheel" (https://sketchfab.com/3d-models/steering-wheel-bf1cf08501b04615aae65677850e7d8e) by ImGreenWolf (https://sketchfab.com/ImGreenWolf) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

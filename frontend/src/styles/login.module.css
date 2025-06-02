@@ -1,0 +1,161 @@
+.content {
+  display: flex;
+  margin: auto;
+}
+.contentBox {
+  position: relative;
+  width: 940px; height: 740px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.28);
+  background: #3E4451;
+  display: flex;
+  overflow: hidden;
+}
+.container {
+    position: relative;
+    margin: 145px 160px;
+    width: 620px; height: 450px;
+    border-radius: 5px;
+    background: #3e4451;
+    backdrop-filter: blur(7.5px);
+    overflow: hidden;
+}
+.container::before{
+  content: "";
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.banner {
+    margin: 0 171px; margin-top: 44px; 
+    color: #eee;
+    font-size: 80px;
+    letter-spacing: 8px;
+}
+
+.container h2 {
+    margin: 0 117px; margin-top: 63px; 
+    color: #eee;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.userAdd {
+    margin: 0 219px; margin-top: 61px;
+    color: #eee;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn {
+    position: relative;
+    padding: 10px 20px;
+    background: #608A9E;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: #EEE;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: background-color 0.3s ease;
+}
+.btn div{
+  width: 100%; height: 95%;
+}
+
+/* button animation */
+.btn::before {
+  content: "";
+  position: absolute;
+  left: -5px; top: -4px; right: 0; bottom: 0;
+  width: 48%; height: 90%;
+  padding: 6px;
+  border-top-left-radius: 50px; border-bottom-left-radius: 50px;
+  border: none;
+  transform: scaleX(0); transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn::after{
+  content: "";
+  position: absolute;
+  left: 50%; top: -4px; right: 0; bottom: 0;
+  padding: 6px;
+  width: 45%; height: 90%;
+  border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  border: none;
+  z-index: -1;
+}
+
+.btn:hover {
+    background-color: #EEE;
+    color: #608A9E;
+}
+
+.btnBox {
+  margin-top: 5%; margin-left: 26%;
+  width: 50%;
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.btnBox:last-child {
+  margin-top: 3%
+}
+
+.btnBox:last-child > div {
+ width: 70%; 
+}
+
+.btnBox:last-child > div::after{
+  content: "";
+  position: absolute;
+  left: 50%; top: -3px; right: 0; bottom: 0;
+  padding: 6px;
+  width: 48%; height: 90%;
+  border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  border: none;
+  z-index: -1;
+}
+
+.btnBox:last-child > div::before {
+  content: "";
+  position: absolute;
+  left: -5px; top: -3px; right: 0; bottom: 0;
+  width: 48%; height: 90%;
+  padding: 6px;
+  border-top-left-radius: 50px; border-bottom-left-radius: 50px;
+  border: none;
+  transform: scaleX(0); transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover::after,
+.btn:hover::before{
+  background-color: #608A9E;
+  transform: scaleX(1);
+}
+
+.btnBox:last-child > div:hover::before,
+.btnBox:last-child > div:hover::after {
+  background-color: #608A9E;
+  transform: scaleX(1);
+}

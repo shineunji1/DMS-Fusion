@@ -1,0 +1,433 @@
+.header{
+    display: flex;
+    background-color: rgba(68, 59, 59, 0.4);
+    width: 100vw;height: 60px;
+    overflow: hidden;
+}
+
+.header > div {
+    display: flex;
+}
+
+.rightIcons > div {
+    display: flex;
+    animation: fade-in 0.5s ease;
+}
+
+.leftIcons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px; top: 10px
+}
+
+.leftIcons > svg {
+    width: 36px; height: 36px;
+}
+
+/* icons */
+.header .status {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    margin: 8px 10px;
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+}
+.text {
+    margin-left: 10px;
+    font-size: 24px;
+}
+.status > svg {
+    margin-top: 3px;
+    width: 24px;
+    color: #eee;
+}
+
+
+.status > svg:last-child {
+    width: 31px;
+    cursor: pointer;
+}
+
+.statusBall {
+    margin-left: 10px; margin-top: 3px;
+    background-color: #eee;
+    width: 14px; height: 14px;
+    border-radius: 50px;
+}
+
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: rgb(202, 202, 20);
+}
+.red {
+    background-color: rgb(190, 10, 10);
+}
+.container {
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.map {
+    width: 90%; 
+    background-color: #d9d9d9;
+}
+
+.side {
+    width: 25%; height: 100%;
+}
+
+.infoContainer {
+    height: calc(100% - 175px);
+}
+
+.musicStation {
+    display: flex;
+    width: 100%; height: 150px;
+    margin-top: 26px;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    color: #eee;
+  }
+  
+  .tumbBox {
+    display: flex;
+    align-items: center; justify-content: center;
+    width: 120px; height: 120px;
+    margin: 12px 0; margin-left: 18px;
+    background-color: #d9d9d9;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .songInfo {
+    width: 65%;
+    margin-left: 30px; margin-top: 13px;
+  }
+  
+  .playtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+  }
+  
+  .songtitle {
+    margin-top: 13px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .playBtn {
+    width: 100%;
+    margin-top: 13px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  .playBtn > svg {
+    margin-top: 3px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #eee;
+  }
+  .playBtn > svg:nth-child(2) {
+    margin-top: 0;
+    font-size: 48px;
+  }
+  
+  .playBtn > svg:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+  }
+
+.btnArea {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.btnArea > button {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    outline: none;
+    border: none;
+}
+
+.btnArea > button::before {
+    content: "";
+    position: absolute;
+    left: -2%; top: -8.7%; right: 0; bottom: 0;
+    width: 52%; height: 115%;
+    border-top-left-radius: 50px; border-bottom-left-radius: 50px;
+    z-index: -1;
+    transform: scaleX(0); transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btnArea > button::after {
+    content: "";
+    position: absolute;
+    left: 50%; top: -8.7%; right: 0; bottom: 0;
+    width: 52%; height: 115%;
+    border-top-right-radius: 50px; border-bottom-right-radius: 50px;
+    z-index: -1;
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btnArea > button:first-child {
+    background: linear-gradient(95deg, #EF5F5F 5.02%, #F7912F 49.92%, #FFC300 94.82%);
+}
+
+.btnArea > button:nth-child(2) {
+    background: linear-gradient(93deg, #3B989B 1.03%, #245463 49.72%, #171E4F 98.42%);
+}
+
+.btnArea > button:hover {
+    background: #eee;
+    color: #245463;
+}
+
+.btnArea > button:hover::before,
+.btnArea > button:hover::after{
+      background-color: #608A9E;
+      transform: scaleX(1);
+}
+
+.contentArea {
+    margin-left: 25px;
+    border-radius: 10px;
+    width: 90%; height: 90%;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.slideContainer {
+    margin-top: 3%;
+    width: 70%; height: 95%;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+
+.slide1 {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    color: #eee;
+    align-items: center;
+    text-shadow: var(--bg-textShadow);
+  }
+.slide1 > svg {
+    filter: drop-shadow(4px 4px 5px black);
+  }
+  /* ✅ 배경을 위한 before 가상 요소 */
+.slide1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color, #ffffff); /* 기본값 */
+    opacity: 0.5; /* 배경만 투명도 적용 */
+    z-index: -1; /* 배경을 뒤로 보냄 */
+}
+
+.weatherContainer {
+    margin: 20px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.weatherName {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cityName {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.temp {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.weatherInfo {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto; /* 2개의 컬럼 */
+    gap: 8px;
+    padding: 10px 10%;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+.weatherInfo::before {
+    position: absolute;
+    margin: auto;
+    width: 90%; height: 100%;
+    left: 0; top: 0; right: 0; bottom: 0;
+    content: "";
+    background-color: #fff;
+    opacity: 0.15;
+}
+
+.slide2,
+.slide3 {
+    background: rgba(28, 31, 43, 0.8); /* 반투명 네이비 */
+    color: #eee;
+    height: 100%;
+
+}
+
+.slide2 .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.slide2 .status {
+    margin: 0 1rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(45, 192, 45);
+}
+.slide2 label + label {
+    margin-left: 54%;
+    font-size: 14px;
+}
+
+.carInfoContainer {
+    padding: 15px;
+}
+
+.pressure {
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+}
+.pressure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+
+}
+.pressure > div {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.pressure > div > div > label {
+    font-size: 18px;
+    font-weight: 700;
+}
+.pressure > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.pressureValue {
+    margin-top: 2%;
+    flex: 1;
+}
+
+.fuleInfo {
+    margin-top: 15%;
+    
+}
+
+.info {
+    margin-top: 5%;
+    padding: 10px;
+    position: relative;
+}
+
+.info::before {
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.25;
+}
+
+.mileage,
+.fule {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.subtitle + span {
+    font-size: 24px;
+    font-weight: 700;
+}
+.slide3 {
+    height: 100%;
+}
+
+.title {
+    padding : 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.monitoringBox {
+    width : 20%; height: 20%;
+    position: absolute;
+    top: 7.5%; left: 59%;
+    z-index: 1;
+}
+
+.monitoringBox > img {
+    width : 80%;
+}
+
+.login {
+    font-size: 24px;
+    cursor: pointer;
+    color: #eee;
+    transition: color 0.3s;
+}
+
+.login:hover {
+    color: #a5cde0;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

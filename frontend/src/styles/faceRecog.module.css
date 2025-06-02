@@ -1,0 +1,177 @@
+.container {
+    margin-top: 92px; margin-left: 254px;
+    color: #eee;
+    animation: fade-in 0.5s ease
+}
+
+/* Progress Bar 구역 */
+.progressBox {
+    margin-left: 21px;
+    width: 365px;
+}
+.progressBar {
+    width: 100%; height: 3px;
+    position: relative; 
+    background-color: #eee;
+}
+
+.progressStatus {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top:-35px; left: 0;
+}
+.progressEclipse{
+    width: 30px; height: 30px;
+    border-radius: 50px;
+    background-color: #eee;
+}
+/* Progress Bar 구역 */
+
+/* Camra Area */
+.cameraBox {
+    width: 420px ; height: 420px;
+    margin-top: 10px; margin-left: -5px;
+}
+
+.faceStatus {
+    width: 100%; height: 100%;
+    border-radius: 390px;
+    background-color: rgba(217, 217, 217, 0.80);
+    box-shadow: 4px 2px 10px 5px rgba(0, 0, 0, 0.25);
+    filter: blur(1px);
+    overflow: hidden;
+}
+
+.camera {
+    margin: 5%;
+    width: 90%; height: 90%;
+    border-radius: 350.998px;
+    background: #D9D9D9;
+}
+
+.camera > img {
+    width: 100%; height : 100%;
+    border-radius: 350.998px;
+}
+/* Camra Area */
+
+.alertMsg {
+    margin-top: 30px; margin-left: -10%;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* faceRecog.module.css 에 추가 */
+
+.camera {
+    margin: 5%;
+    width: 90%; height: 90%;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+  /* MJPEG 스트림 이미지 스타일 */
+  .cameraStream {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+    will-change: contents; /* 브라우저에 변경 가능성 알림으로 렌더링 최적화 */
+    backface-visibility: hidden; /* 가속 처리 */
+    transform: translateZ(0); /* 하드웨어 가속 활성화 */
+  }
+  
+  /* 숨김 처리 */
+  .hidden {
+    display: none;
+  }
+  
+  /* 카메라 상태 표시기 */
+  .faceStatus {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 카메라 컨테이너 */
+  .cameraBox {
+    width: 420px ; height: 420px;
+    margin-top: 10px; margin-left: -5px;
+  }
+  
+  /* 연결 중 메시지 */
+  .reconnecting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 2;
+    white-space: nowrap;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* 맥박 애니메이션 */
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  /* 미디어 쿼리 - 모바일 대응 */
+  @media (max-width: 480px) {
+    .cameraBox {
+      width: 280px;
+      height: 280px;
+    }
+    
+    .reconnecting {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+
+  .add {
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%; margin-left: 23%;
+    outline: none; border: none;
+    color: #eee;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #21499e;
+    border-radius: 50px;
+    font-size: 24px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .add:hover {
+    background-color: #eee;
+    color: #3E4451;
+}

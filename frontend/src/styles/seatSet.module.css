@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.container canvas {
+    margin-left: 15%; margin-top: 12%;
+    padding: 10px;
+    transform: scale(1.5);
+}
+
+.container button {
+    margin: 2% 1%;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #3ca5d6;
+    color: #eee;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.subtitle {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.controllBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto; margin-top: 10%;
+    width: 45%; height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #eee;
+}
+
+.controllBox > div {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.controllBox > div:nth-child(2) {
+    height: 160px;
+}
+
+.btnContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.controllBox select {
+    width: 100%;
+    margin-top: 1%;
+    padding: 10px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.tableBox {
+    display: flex;
+}
+
+.tableBox > table {
+    flex: 1;
+    margin: 0.5%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #3E4451;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.tableBox th,
+.tableBox td  {
+    padding: 2%;
+    border: 1px solid #3E4451;
+}
+
+.resetBtn {
+    margin-top: 5%;
+    cursor: pointer;
+    width: 20%;
+    padding: 8px 20px;
+    margin-left: 70%;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #A62323;
+    border-radius: 50px;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.update {
+    cursor: pointer;
+    display: flex;
+    margin: auto !important;
+    margin-top: 25px !important;
+    width: 80% !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+    height: 10%;
+    background-color: #21499e;
+    border-radius: 50px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.container button:hover,
+.resetBtn:hover,
+.update:hover {
+    background-color: #eee;
+    color: #3E4451;
+} 

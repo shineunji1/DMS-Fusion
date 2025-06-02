@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,html {
+  margin: 0; padding: 0;
+  font-family: 'Pretendard';
+  height: 100%;
+  background: linear-gradient(105deg, #BBC7D2 0.24%, #556377 47.86%, #292E49 96.45%);
+  backdrop-filter: blur(25px);
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  height: calc(100% - 120px);
+}
+
+.container{
+  width: 940px; height: 740px;
+  border-radius: 0px 10px 10px 0px;
+  background: #3E4451;
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%; height: 120px;
+  background-color: #373A40;
+}
+
+
+.return-btn {
+  margin-left:300px; margin-top: 20px;
+  cursor: pointer;
+  color: #eee;
+  width: 30% !important;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #608A9E;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.return-btn:hover {
+  background-color: #eee;
+  color: #608A9E;
+}

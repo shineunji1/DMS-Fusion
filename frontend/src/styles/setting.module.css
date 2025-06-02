@@ -1,0 +1,68 @@
+.container {
+    animation: fade-in 1s ease;
+}
+
+.container > div {
+    margin-top: 128px; margin-left: 15px;
+    width: 300px; height: 515px;
+    cursor: pointer;
+}
+.menuTitle {
+    color: #eee;
+    text-align: center;
+    padding-top: 53px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 14.4px;
+}
+.swiperContainer {
+    overflow: visible !important;
+}
+.swiper-wrapper { 
+    transition: transform 0.5s ease-in-out;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.slide1{
+    background-color: #8eafc0;
+}
+.slide2 {
+    background-color: #7646ce;
+}
+.slide3 {
+    background-color: #b8b80b;
+}
+.slide4 {
+    background-color: #13d3da;
+}
+
+.slide1 img {
+    margin: 0  28px;
+    margin-top: 127px;
+}
+.slide2 img {
+    margin-left: 35px;
+    margin-top: 120px;
+}
+.slide3 img {
+    transform: scale(1.2);
+    margin-top: 160px; margin-left: 60px; 
+}
+.slide4 img {
+    transform: scale(1.4);
+    margin-top: 160px; margin-left: 70px; 
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

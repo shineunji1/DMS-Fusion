@@ -1,0 +1,36 @@
+.container {
+    width: 80%; height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px 40px; padding: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.container img{
+    width: 50%; height: 100%;
+}
+
+.chat {
+    position: absolute;
+    font-size: 24px;
+    top:255px; left: calc(100% - 865px);
+    letter-spacing: 3px;
+}
+
+.title {
+    margin-top: 100px;
+    text-align: center;
+    color: #eee;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.subtitle {
+
+    margin-top: 50px;
+    color: #eee;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 30px;
+}
