@@ -25,6 +25,10 @@ Three.js / React-three-fiber / Swiper.js
 - Pytorch : tensorflow 대비 다양한 기능과 연구목적인 모델로 제작 하였기 때문에 pytorch로 구현하였습니다.
 - Three.js : 메모리 시트 구현시 실제 차량 과 비슷하게 하기 위해 좌석과 핸들 3D 모델을 불러와서 움직임을 보이도록 하기 위해서 사용하였습니다.
 
+
+# 제품 소개
+<img width="1900" height="1047" alt="image" src="https://github.com/user-attachments/assets/da8b8f30-cba2-4b9c-98fd-297d68db808c" />
+
 # 시스템 아키텍처
 ![image](https://github.com/user-attachments/assets/43646a11-43ff-4d9b-a895-ff76f7badff0)
 
