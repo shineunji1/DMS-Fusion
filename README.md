@@ -1,11 +1,11 @@
 # DMS_Fusion
-RGB-D 카메라를 활용한 DMS 구현(스마트인재개개발원 프로젝트)
+RGB-D 카메라를 활용한 DMS 구현(스마트인재개발원 프로젝트)
 
 # 개발 기간
-2025.03.04 ~ 2025.03.20 (총 16일)
+2025.02.25 ~ 2025.03.20
 
 # 맡은 역할
-FrontEnd로 UI/UX개발 및 구현, 화면 디자인 설계, 화면 설계서 제작 및 딥러닝 모델을 개발 하였습니다.
+BackEnd 파트로 졸음, 주의분산 감지 알림 기능, 좌석 정보 저장 및 프로필 정보 저장 부분을 개발하였습니다.
 
 # 사용기술
 - 언어 : <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
@@ -18,10 +18,10 @@ FrontEnd로 UI/UX개발 및 구현, 화면 디자인 설계, 화면 설계서 �
 # 라이브러리
 Three.js / React-three-fiber / Swiper.js
 
-# 주요 기술 채용목적
-- FastAPI : DeepLearing 기술과 OpenCV의 사용목적 때문에 Python 기반 중 비동기 통신이 가능한 이유로 채용하였습니다.
-- Next.js : SSR(서버 사이드 렌더링)이 가능한 Node.js의 풀스택 기반 프레임워크로 <b>빠른 로딩과 React의 장점을 그대로 가져가</b> 화면 구현하는데 <br/> 어려움이 없을것 같아 채용하였습니다.
-- Milvus : 얼굴 인식을 할 때 기존 RDB에 적용시키면 인증의 어려움과 큰 배열의 값은 RDB와는 적합하지 않다고 생각하여 들어온 벡터 데이터의 <br/> 근사값으로 데이터를 조회하는 기능인 VectorDB중 자체적으로 DBMS시스템을 제공해주는 이유 때문에 채용하였습니다.
+# 주요 기술 선택 이유
+- FastAPI : DeepLearing 기술과 OpenCV의 사용목적 때문에 Python 기반 중 비동기 통신이 가능한 이유로 사용하게 되었습니다.
+- Next.js : SSR(서버 사이드 렌더링)이 가능한 Node.js의 풀스택 기반 프레임워크로 <b>빠른 로딩과 React의 장점을 그대로 가져가</b> 화면 구현하는데 <br/> 어려움이 없을것 같아 사용하였습니다.
+- Milvus : 얼굴 인식을 할 때 기존 RDB에 적용시키면 인증의 어려움과 큰 배열의 값은 RDB와는 적합하지 않다고 생각하여 들어온 벡터 데이터의 <br/> 근사값으로 데이터를 조회하는 기능인 VectorDB중 자체적으로 DBMS시스템을 제공해주는 이유 때문에 선택했습니다.
 - Pytorch : tensorflow 대비 다양한 기능과 연구목적인 모델로 제작 하였기 때문에 pytorch로 구현하였습니다.
 - Three.js : 메모리 시트 구현시 실제 차량 과 비슷하게 하기 위해 좌석과 핸들 3D 모델을 불러와서 움직임을 보이도록 하기 위해서 사용하였습니다.
 
@@ -90,8 +90,8 @@ Three.js / React-three-fiber / Swiper.js
 ![face-reset](https://github.com/user-attachments/assets/33469add-c25f-427a-b72b-f49f6845cd58)
 
 # 어려웠던 점
-- 기존에 Next.js를 연습삼아 사용하였지만 주로 Nest.js나 Express를 활용하여 백 서버를 구현하였지만 이번에 FastAPI를 활용하면서 연결하는데 어려움이 컸습니다.<br/> 특히, 실시간 스트리밍 쪽에서 에러가 많이 나타나 WebSocket을 Next.js : SSR(서버 사이드 렌더링)이 가능한 Node.js의 풀스택 기반 프레임워크로 <b>빠른 로딩과 React의 장점을 그대로 가져가</b> 화면 구현하는데 <br/> 어려움이 없을것 같아 채용하였습니다.
-- Milvus : 얼굴 인식을 할 때 기존 RDB에 적용시키면 인증의 어려움과 큰 배열의 값은 RDB와는 적합하지 않다고 생각하여 들어온 벡터 데이터의 <br/> 근사값으로 데이터를 조회하는 기능인 VectorDB중 자체적으로 DBMS시스템을 제공해주는 이유 때문에 채용하였습니다.
+- 기존에 Next.js를 연습삼아 사용하였지만 주로 Nest.js나 Express를 활용하여 백 서버를 구현하였지만 이번에 FastAPI를 활용하면서 연결하는데 어려움이 컸습니다.<br/> 특히, 실시간 스트리밍 쪽에서 에러가 많이 나타나 WebSocket을 Next.js : SSR(서버 사이드 렌더링)이 가능한 Node.js의 풀스택 기반 프레임워크로 <b>빠른 로딩과 React의 장점을 그대로 가져가</b> 화면 구현하는데 <br/> 어려움이 없을것 같아 사용하였습니다.
+- Milvus : 얼굴 인식을 할 때 기존 RDB에 적용시키면 인증의 어려움과 큰 배열의 값은 RDB와는 적합하지 않다고 생각하여 들어온 벡터 데이터의 <br/> 근사값으로 데이터를 조회하는 기능인 VectorDB중 자체적으로 DBMS시스템을 제공해주는 이유 때문에 사용하였습니다.
 - Pytorch : tensorflow 대비 다양한 기능과 연구목적인 모델로 제작 하였기 때문에 pytorch로 구현하였습니다.
 - Three.js : 메모리 시트 구현시 실제 차량 과 비슷하게 하기 위해 좌석과 핸들 3D 모델을 불러와서 움직임을 보이도록 하기 위해서 사용하였습니다.
 
@@ -117,7 +117,7 @@ Three.js / React-three-fiber / Swiper.js
   - Delta (> 1.25) : 93.15% => 실제 값의 1.25배 안에서 93프로 정확도를 가지고 있음을 뜻함
 
 - 더 개발할 점
-  - RGB만으로도 깊이를 측정할 수 있도록 개발발
+  - RGB만으로도 깊이를 측정할 수 있도록 개발
 
 # 주요 기능
 - 깊이 보정 : DepthAnything V2와 Orbbec Astro + 를 활용하여 Astro + 가 찍지못한 공간을 DepthAnything V2의 MDE를 활용하여 빈 값을 채우고 실측치랑 맞게 보정을 해줌
